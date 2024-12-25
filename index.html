@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <h1 class="main__title">This is main section</h1>
+      <!-- carousal section -->
+      <section class="main__carousal-section">
+        <h2 class="main__carousal-section__title">This is carousal section</h2>
+        <!-- carousal image div container -->
+        <div class="main__carousal-section__image-container">
+          <!-- background design for reviewer's image -->
+          <img
+            class="main__carousal-section__image-container__background-design-image"
+            src="./images/pattern-bg.svg"
+            alt=""
+          />
+          <!-- reviewer - tanya image -->
+          <img
+            id="tanya-profile-image"
+            class="main__carousal-section__image-container__reviewer-image tanya-profile-image"
+            src="./images/image-tanya.jpg"
+            alt=""
+          />
+          <!-- reviewer - john image -->
+          <img
+            id="john-profile-image"
+            class="main__carousal-section__image-container__reviewer-image john-profile-image"
+            src="./images/image-john.jpg"
+            alt=""
+          />
+
+          <!-- button images container for navigating left or right carousal images -->
+          <div
+            class="main__carousal-section__image-container__button-images-container"
+          >
+            <!-- left button image -->
+            <img
+              class="main__carousal-section__image-container__button-images-container__left-button-image"
+              src="./images/icon-prev.svg"
+              alt=""
+            />
+            <!-- right button image -->
+            <img
+              class="main__carousal-section__image-container__button-images-container__right-button-image"
+              src="./images/icon-next.svg"
+              alt=""
+            />
+          </div>
+
+          <!--------------------- carousal text div container --------------------->
+          <div
+            class="main__carousal-section__image-container__review-container"
+          >
+            <!-- ******************************xxx******************************* -->
+            <div
+              class="main__carousal-section__image-container__review-container__xxx"
+            >
+              <!-- review container quote backround design -->
+              <img
+                class="main__carousal-section__image-container__review-container__xxx__quote-background-design"
+                src="./images/pattern-quotes.svg"
+                alt=""
+              />
+              <!---------TANYA------------------->
+              <div
+                id="tanya-review-text-container"
+                class="main__carousal-section__image-container__review-container__xxx__review-text-container tanya-review-text-container"
+              >
+                <!-- review text -->
+                <p
+                  class="main__carousal-section__image-container__review-container__xxx__review-text-container__review"
+                >
+                  “ I’ve been interested in coding for a while but never taken
+                  the jump, until now. I couldn’t recommend this course enough.
+                  I’m now in the job of my dreams and so excited about the
+                  future. ”
+                </p>
+
+                <!-- reviews details container -->
+                <div
+                  class="main__carousal-section__image-container__review-container__xxx__review-text-container__reviewer-details-container"
+                >
+                  <!-- reviewer name -->
+                  <p
+                    class="main__carousal-section__image-container__review-container__xxx__review-text-container__reviewer-details-container__reviewer"
+                  >
+                    Tanya Sinclair
+                  </p>
+                  <!-- reviewer designation -->
+                  <p
+                    class="main__carousal-section__image-container__review-container__xxx__review-text-container__reviewer-details-container__reviewer-designation"
+                  >
+                    UX Engineer
+                  </p>
+                </div>
+              </div>
+
+              <!-------------------JOHN ----------------------->
+              <div
+                id="john-review-text-container"
+                class="main__carousal-section__image-container__review-container__xxx__review-text-container john-review-text-container"
+              >
+                <!-- review text -->
+                <p
+                  class="main__carousal-section__image-container__review-container__xxx__review-text-container__review"
+                >
+                  “ If you want to lay the best foundation possible I’d
+                  recommend taking this course. The depth the instructors go
+                  into is incredible. I now feel so confident about starting up
+                  as a professional developer. ”
+                </p>
+
+                <!-- reviews details container -->
+                <div
+                  class="main__carousal-section__image-container__review-container__xxx__review-text-container__reviewer-details-container"
+                >
+                  <!-- reviewer name -->
+                  <p
+                    class="main__carousal-section__image-container__review-container__xxx__review-text-container__reviewer-details-container__reviewer"
+                  >
+                    John Tarkpor
+                  </p>
+                  <!-- reviewer designation -->
+                  <p
+                    class="main__carousal-section__image-container__review-container__xxx__review-text-container__reviewer-details-container__reviewer-designation"
+                  >
+                    Junior Front-end Developer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carousal background bottom design image -->
+        <img
+          class="main__carousal-section__background-design-image"
+          src="./images/pattern-curve.svg"
+          alt=""
+        />
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

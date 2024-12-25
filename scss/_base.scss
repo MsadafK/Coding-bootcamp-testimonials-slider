@@ -1,0 +1,6 @@
+// BASE.SCSS
+
+body {
+  font-family: map-get($font, inter), sans-serif;
+  overflow-x: hidden;
+}

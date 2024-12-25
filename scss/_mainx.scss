@@ -1,0 +1,121 @@
+// MAIN.SCSS
+
+.main {
+  height: 100vh;
+
+  &__title {
+    display: none;
+  }
+
+  &__carousal-section {
+    height: 100%;
+    position: relative;
+
+    &__title {
+      display: none;
+    }
+
+    &__image-container {
+      position: relative;
+      margin: 1.5rem;
+
+      &__background-design-image {
+        width: 100%;
+        display: block;
+      }
+
+      &__reviewer-image {
+        width: 85%;
+        height: 85%;
+        display: block;
+        position: absolute;
+        top: 7.5%;
+        left: 7.5%;
+        transition: ease-in-out 0.5s;
+        display: none;
+      }
+
+      &__button-images-container {
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &__left-button-image,
+        &__right-button-image {
+          margin: 0.5rem;
+          cursor: pointer;
+        }
+      }
+
+      &__review-container {
+        margin-top: 1rem;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+
+        &__xxx {
+          position: relative;
+
+          &__quote-background-design {
+            position: absolute;
+            width: 25%;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+          }
+          &__review-text-container {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 1.5rem;
+            transition: ease-in-out 0.5s;
+            display: none;
+
+            &__review {
+              color: map-get($colors, primary, dark-blue);
+              line-height: 1.5;
+              font-size: 0.95rem;
+              margin-bottom: 1rem;
+            }
+
+            &__reviewer-details-container {
+              &__reviewer {
+                font-size: 0.85rem;
+                font-weight: map-get($font-weights, bold);
+                margin-bottom: 0.25rem;
+              }
+
+              &__reviewer-designation {
+                font-size: 0.875rem;
+                color: map-get($colors, primary, grayish-blue);
+                font-weight: map-get($font-weights, small);
+              }
+            }
+          }
+        }
+      }
+    }
+    &__background-design-image {
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.main__carousal-section__image-container__reviewer-image,
+.main__carousal-section__image-container__review-container__xxx__review-text-container {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}

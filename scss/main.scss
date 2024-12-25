@@ -1,0 +1,130 @@
+// MAIN.SCSS
+
+@import "./variables";
+@import "./reset";
+@import "./base";
+@import "./mainx";
+
+// media queries
+// 375px and more
+@media (min-width: 375px) {
+  .main__carousal-section__image-container {
+    margin: 3.01rem;
+  }
+  .main__carousal-section__background-design-image {
+    bottom: -5%;
+  }
+}
+
+// 425px and more
+@media (min-width: 425px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__carousal-section {
+      // max-width: 375px;
+      &__image-container {
+        margin: 2.5rem 5rem;
+      }
+    }
+  }
+}
+
+// 768px and more
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .main {
+    &__carousal-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      &__image-container {
+        margin: 0 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__background-design-image {
+          grid-column: 2 / 3;
+        }
+
+        &__reviewer-image {
+          grid-column: 2 / 3;
+        }
+
+        &__button-images-container {
+          left: 0;
+          transform: none;
+          grid-column: 2 / 3;
+        }
+
+        &__review-container {
+          grid-column: 1 / 2;
+          text-align: left;
+          &__xxx {
+            &__quote-background-design {
+              left: 20%;
+              transform: none;
+            }
+            &__review-text-container {
+              padding-top: 2rem;
+            }
+          }
+        }
+      }
+
+      &__background-design-image {
+        bottom: -15%;
+      }
+    }
+  }
+}
+
+// 1024px and more
+@media (min-width: 1024px) {
+  html {
+    font-size: 21px;
+  }
+
+  .main {
+    display: block;
+    &__carousal-section {
+      &__image-container {
+        margin: 0 5rem;
+        max-width: 802.8px;
+        height: 500px;
+
+        &__background-design-image {
+          height: 100%;
+        }
+        &__review-container {
+          margin-top: 35%;
+        }
+        &__button-images-container {
+          left: 15%;
+          bottom: 4%;
+        }
+      }
+      &__background-design-image {
+        bottom: -20%;
+      }
+    }
+  }
+}
+
+// 1440px and more
+@media (min-width: 1440px) {
+  .main {
+    &__carousal-section {
+      &__background-design-image {
+        bottom: -35%;
+      }
+    }
+  }
+}
